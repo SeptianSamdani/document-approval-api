@@ -8,6 +8,8 @@ import { Document } from './documents/entities/document.entity';
 import { Approval } from './approvals/entities/approval.entity';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
+import { DocumentsModule } from './documents/documents.module';
+import { ApprovalsModule } from './approvals/approvals.module';
 
 @Module({
   imports: [
@@ -31,6 +33,8 @@ import { UsersModule } from './users/users.module';
     }),
     AuthModule,
     UsersModule,
+    DocumentsModule,
+    ApprovalsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
